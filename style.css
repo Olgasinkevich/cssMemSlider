@@ -91,5 +91,12 @@ body {
     border: 1px solid white;
     background-color: inherit;
 }
-
-
+/*
+@media screen and (max-width: 480px){
+    .wrapper {
+        margin: 20px 0 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+}*/
