@@ -14,21 +14,29 @@ body {
 .container {
     width: 50%;
     height: 50%;
+    max-width: 580px;
     align-self: center;
     padding: 10px 20px;
     background-color: #ca6e0c;
 }
 
-.images {
-    width: 100%;
+.images-window {
     height: 80%;
     overflow: hidden;
     border-radius: 15px;
+}
 
+.images {
+    display: flex;
+    position: relative;
+    height: 100%;
+    left: 0;
+    transition: all ease 1s;
 }
 
 .images img {
     object-fit: cover;
+    height: 100%;
     width: 100%;
 }
 
@@ -39,7 +47,14 @@ body {
     align-items: center;
 }
 
+.texts {
+    display: flex;
+    width: 33%;
+    overflow: hidden;
+}
+
 .text {
+    width: 100%;
     font-family: Serif;
     font-size: 18px;
     color: #411900;
@@ -49,29 +64,30 @@ body {
     display: flex;
     /*justify-content: flex-end;*/
 }
-
 .button {
+    cursor: pointer;
+}
+
+.indicator {
+    margin: 5px;
     width: 7px;
     height: 7px;
-    margin: 3px;
     border: 1px solid #301909;
     background-color: #301909;
     border-radius: 50%;
-
 }
 
-.button_active {
+.button_active .indicator {
     border: 1px solid #301909;
     background-color: inherit;
 }
 
-:hover.button {
+:hover.button .indicator {
     background-color: white;
     border: 1px solid white;
-    cursor: pointer;
 }
 
-:hover.button_active {
+:hover.button_active .indicator{
     border: 1px solid white;
     background-color: inherit;
 }
