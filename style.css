@@ -47,10 +47,18 @@ body {
     align-items: center;
 }
 
-.texts {
-    display: flex;
+.texts-window {
     width: 33%;
     overflow: hidden;
+}
+
+.texts {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 400%;
+    left: 0;
+    transition: all ease .3s;
 }
 
 .text {
@@ -91,7 +99,7 @@ body {
     border: 1px solid white;
     background-color: inherit;
 }
-/*
+
 @media screen and (max-width: 480px){
     .wrapper {
         margin: 20px 0 0;
@@ -99,4 +107,4 @@ body {
         justify-content: center;
         flex-direction: column-reverse;
     }
-}*/
+}
