@@ -11,6 +11,7 @@ let textWidth = parseInt(window.getComputedStyle(texts[0]).width);
 
 window.addEventListener('resize', () => {
   imageWidth = parseInt(window.getComputedStyle(images[0]).width);
+  textWidth = parseInt(window.getComputedStyle(texts[0]).width);
 })
 
 buttons.forEach((item, index) => {
